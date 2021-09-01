@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 date: '2021-08-31'
-lastmod: '2021-08-31'
+lastmod: '2021-09-01'
 tags: []
 draft: false
 summary: Hello World! Welcome to My Blog. This is my first post.
@@ -14,6 +14,6 @@ images: []
 
 之後應該都會將文章發表在這邊了，之前的部落格就讓它隨風而去吧 XD，之前的部落格是使用 [Jekyll](https://jekyllrb.com/) 建置在 [GitHub Page](https://pages.github.com/)
 
-這次則改採用 [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/) 的開源專案 [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)建置在 [Vercel](https://vercel.com/) 上，這個專案簡潔美觀又彈性，搭配上現在最潮的 [Tailwind CSS](https://tailwindcss.com/)，往後如果有畫面改版的需求也會方便很多
+這次則改採用 [Next.js](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/) 的開源專案 [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) 建置在 [Vercel](https://vercel.com/) 上，這個專案簡潔美觀又彈性，搭配上現在最潮的 [Tailwind CSS](https://tailwindcss.com/)，往後如果有畫面改版的需求也會方便很多
 
 第一篇文章先許上願望，希望自己可以好好保持寫作的習慣，其實寫作的感覺也挺好的！
