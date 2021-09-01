@@ -6,6 +6,8 @@ tags: []
 draft: false
 summary: Hello World! Welcome to My Blog. This is my first post.
 images: []
+authors: ['default']
+layout: PostLayout
 ---
 
 第二個部落格誕生，上週無聊在 [Google Domain](https://domains.google.com/) 搜尋到自己英文名字的 dev 網域還沒有被註冊走，索性就註冊下來了，這個網域預計可以拿來作為自已的個人頁面、部落格、作品展示
