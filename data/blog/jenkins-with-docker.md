@@ -10,7 +10,7 @@ authors: ['default']
 layout: PostLayout
 ---
 
-![](/static/images/202109/02/jenkins-with-docker/cover_CICD-Overview.png)
+![](/static/images/2021/09/02/jenkins-with-docker/cover_CICD-Overview.png)
 
 最近協助團隊導入了 [Jenkins](https://www.jenkins.io/) 作為我們的 CI/CD 平台，在我還沒有來到這個團隊時，每當前後端版本有更新時總是都得人工在本機進行編譯後遠端連線至伺服器進行關閉現有服務、替換新程式、開啟服務，其中許多的人工行為非常耗時且枯燥，光是部署的時間成本可能就得耗費不少並且可能有人為失誤的可能性，所以盡可能的將這些交給自動化處理
 
