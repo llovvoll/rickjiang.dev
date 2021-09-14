@@ -6,7 +6,6 @@ import Head from 'next/head'
 
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
-import ScrollToTop from '@/components/ScrollToTop'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -18,7 +17,6 @@ export default function App({ Component, pageProps }) {
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>
-      <ScrollToTop />
     </ThemeProvider>
   )
 }
