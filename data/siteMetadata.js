@@ -1,7 +1,7 @@
 const siteMetadata = {
-  title: 'Rick Jiang',
+  title: "Rick's Blog",
   author: 'Rick Jiang',
-  headerTitle: '',
+  headerTitle: "Rick's Blog",
   description: '',
   language: 'en-us',
   siteUrl: 'https://rickjiang.dev',
