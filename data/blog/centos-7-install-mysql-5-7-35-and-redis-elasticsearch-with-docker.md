@@ -10,6 +10,8 @@ authors: ['default']
 layout: PostLayout
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 前陣子將公司安裝在 Windows Server 上的開發資料庫及快取服務搬移到 [CentOS](https://www.centos.org/) 上， Linux 系統還是比較穩定及節省效能，[MySQL](https://www.mysql.com/) 採取直接安裝到系統上，[Redis](https://redis.io/) 及 [Elasticsearch](https://www.elastic.co/) 則使用 Docker 快速搭建，以下為安裝及設定紀錄
 
 ## 1. CentOS 7 基本系統設定

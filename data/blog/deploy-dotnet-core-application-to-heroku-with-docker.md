@@ -10,6 +10,8 @@ authors: ['default']
 layout: PostLayout
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 [Heroku](https://www.heroku.com/languages) 雖然支援的語言中沒有 C#，但是支援容器化佈署，所以我們可以將 .NET Core 的程式打包成容器進行佈署就可以了，剛好最近手上有個小專案有這個需求，所以記錄一下佈署過程
 
 # 1. 建立 Dockerfile

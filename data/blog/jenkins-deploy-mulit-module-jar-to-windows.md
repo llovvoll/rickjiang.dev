@@ -10,6 +10,8 @@ authors: ['default']
 layout: PostLayout
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 最近將公司內部的一個 Maven 專案利用 Jenkins 做到自動化編譯及佈署到遠端 Windows 伺服器中，搭配 Batch Script 自動替換新版 Jar 檔，關閉舊版程式並執行新版程式，達成全自動化作業，但因為對 Java 不太熟，雖然實現方式非常土炮，但還是比之前人工更版方便很多了，之後可以繼續研究看看是否有更好的解決方案
 
 # 踩坑紀錄

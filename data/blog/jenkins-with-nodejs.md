@@ -10,6 +10,8 @@ authors: ['default']
 layout: PostSimple
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 ![](/static/images/2021/09/04/jenkins-with-nodejs/jenkins-with-nodejs-workflow.png)
 
 上一篇講到了如何使用 Docker 快速建置團隊的 CI/CD 平台 Jenkins，這篇就來介紹如何快速的建立自動化部署我們的前端專案，主要的步驟如下，廢話不多說 Just Do It！

@@ -10,6 +10,8 @@ authors: ['default']
 layout: PostLayout
 ---
 
+<TOCInline toc={props.toc} asDisclosure />
+
 前幾篇文章我們使用 Docker 建立了 CI/CD 平台 Jenkins，並做到了簡單的 Node.js 專案的自動化編譯及佈署，但是當一個專案逐漸壯大或開發人員增加時，總會造成專案品質的問題，因為每個人技術或是觀念習慣不同所導致程式碼的變化，這時除了做 Code Review 之外，還能藉由 [SonarQube](https://www.sonarqube.org/) 這套開源的程式碼品質分析工具來對我們的專案進行分析找出隱藏在層層程式碼中的問題
 
 # 1. 建置 SonarQube
