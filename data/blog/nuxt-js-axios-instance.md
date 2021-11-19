@@ -146,6 +146,8 @@ export default {
 }
 ```
 
+---
+
 ## References
 
 - [Store - Nuxt TypeScript](https://typescript.nuxtjs.org/cookbook/store/)

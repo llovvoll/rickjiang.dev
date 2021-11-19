@@ -127,6 +127,8 @@ javascript-module.sonar.projectBaseDir=src
 
 如果上面的步驟都沒有錯誤的話，正常來說在 Jenkins 的構建 Console 中就會看到掃描分析的相關紀錄，此時就可以回到 SonarQube 的頁面應該就會看到分析的結果了，上圖僅供參考....絕不是我的專案 XD
 
+---
+
 ## References
 
 - [SonarQube 程式碼品質分析工具使用教學 - Office 指南](https://officeguide.cc/sonarqube-code-quality-security-review-tool-tutorial-examples/)

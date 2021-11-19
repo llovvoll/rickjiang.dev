@@ -116,6 +116,8 @@ Goto:Eof
 
 雖然完成了自動化的目標，但是我覺得實現方式真的髒了一點，有很多優化的地方，像是工作排程器的部分可以改使用 Golang 或 Python 簡單寫個 Webhook 來給 Jenkins 呼叫使用，如果有更好的解決方式，也歡迎在留言分享交流一下 🤗，打完收工 🖖
 
+---
+
 ## References
 
 - [windows、linux 如何後臺運行 jar（而且顯示進程名） - JavaShuo](http://hk.javashuo.com/article/p-anasigrr-kr.html)

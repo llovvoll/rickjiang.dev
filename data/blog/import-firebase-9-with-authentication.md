@@ -46,6 +46,8 @@ export default app
 
 這樣就可以繼續使用 `app.auth()` 的方式來調用囉
 
+---
+
 ## References
 
 - [Upgrade from version 8 to the modular Web SDK  |  Firebase Documentation](https://firebase.google.com/docs/web/modular-upgrade)

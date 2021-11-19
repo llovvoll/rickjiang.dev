@@ -84,6 +84,8 @@ heroku logs --tail -a <your-heroku-app-name>
 
 如果有容器更新的需求，只要再次執行 `heroku container:push` 跟 `heroku container:release` 就可以完成更新了，結論 Heroku 有支援容器服務真的是很方便，佈署不僅限於 .NET Core 的容器，其它的語言應用程式只要打包成容器也可以使用同樣的方式進行佈署，打完收工 🖖
 
+---
+
 ## References
 
 - [Container Registry & Runtime (Docker Deploys) | Heroku Dev Center](https://devcenter.heroku.com/articles/container-registry-and-runtime)

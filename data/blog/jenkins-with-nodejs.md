@@ -111,6 +111,8 @@ sudo chmod a+rwx /var/www/html/
 
 這篇文章所提到的都是很基礎的應用，Jenkins 還有很多更強大的應用及設定，不過要學習的東西也很多，歡迎進入到 Jenkins 的~~坑~~
 
+---
+
 ## References
 
 - [CI/CD Pipeline for a NodeJS Application with Jenkins | by Prashant Bhatasana | AppGambit | Medium](https://medium.com/appgambit/ci-cd-pipeline-for-a-nodejs-application-with-jenkins-fa3cc7fad13a)
