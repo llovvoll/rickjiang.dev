@@ -10,9 +10,9 @@ authors: ['default']
 layout: PostLayout
 ---
 
-以往在 Vue 的專案中，我的習慣都會將 Axios 做二次封裝，可以對 Instance 加工一些 Loading 效果或是攔截器，處理好之後再 Export 給 API 的封裝，這樣在呼叫 API 的時候會比較方便及容易管理，但是平常很少碰 Nuxt，所以在封裝的時候的時候遇到一些問題，這邊紀錄一下如何進行封裝
-
 <TOCInline toc={props.toc} asDisclosure />
+
+以往在 Vue 的專案中，我的習慣都會將 Axios 做二次封裝，可以對 Instance 加工一些 Loading 效果或是攔截器，處理好之後再 Export 給 API 的封裝，這樣在呼叫 API 的時候會比較方便及容易管理，但是平常很少碰 Nuxt，所以在封裝的時候的時候遇到一些問題，這邊紀錄一下如何進行封裝
 
 ## 1. 安裝 @nuxtjs/axios
 
