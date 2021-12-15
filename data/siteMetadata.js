@@ -6,6 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   siteUrl: 'https://rickjiang.dev',
   siteRepo: 'https://github.com/llovvoll/rickjiang.dev',
+  theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
