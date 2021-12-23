@@ -1,7 +1,7 @@
 ---
 title: 開箱 RackNerd 年付 $10.88 美金 VPS & 利用 Docker 快速建置 VPN Server
 date: '2021-12-22'
-lastmod: '2021-12-22'
+lastmod: '2021-12-24'
 tags: ['vps', 'docker']
 draft: false
 summary: 之前也有買過幾台年付 $10 美金左右的 VPS，昨天在 VPS 論壇上看到有人分享 RackNerd 的黑色星期五促銷方案，一台 VPS 才年付 $10.88 美金 RackNerd 的評論也還不錯，所以就手滑下訂了 XD，買來當 Lab 很方便，價格非常便宜且不傷荷包
@@ -9,6 +9,8 @@ images: []
 authors: ['default']
 layout: PostLayout
 ---
+
+![](/static/images/2021/12/22/racknerd-vps-vpn-server-wtih-docker/001.png)
 
 之前也有買過幾台年付 \$10 美金左右的 VPS，昨天在 VPS 論壇上看到有人分享 [RackNerd](https://www.racknerd.com/) 的黑色星期五促銷方案，一台 VPS 才年付 \$10.88 美金，RackNerd 的評論也還不錯，所以就手滑下訂了 XD，買來當 Lab 很方便，價格非常便宜且不傷荷包
 
