@@ -4,7 +4,7 @@ const siteMetadata = {
   headerTitle: "Rick's Blog",
   description: '',
   language: 'en-us',
-  siteUrl: 'https://rickjiang.dev',
+  siteUrl: 'https://www.rickjiang.dev',
   siteRepo: 'https://github.com/llovvoll/rickjiang.dev',
   theme: 'system', // system, dark or light
   siteLogo: '/static/images/logo.png',
