@@ -10,9 +10,9 @@ authors: ['default']
 layout: PostLayout
 ---
 
-![](/static/images/2022/02/14/gitlab-and-gitlab-runner-with-docker/gitlab_workflow_example.png)
-
 <TOCInline toc={props.toc} asDisclosure />
+
+![](/static/images/2022/02/14/gitlab-and-gitlab-runner-with-docker/gitlab_workflow_example.png)
 
 繼[上一篇](https://www.rickjiang.dev/blog/jenkins-with-docker)文章中提到為團隊導入了 Jenkins 作為我們的 CI/CD 平台，這段時間整體架構都運作的非常順暢，也大大提升了團隊開發效率，但是為甚麼這次要替換掉既有架構呢？因爲目前所使用的版本控制平台為 [Gitblit](http://gitblit.github.io/gitblit/) ，雖然以版本控制的角度來看沒有甚麼太大的問題，但畢竟還是小眾平台且功能較為陽春，使用起來還是覺得少了點東西，所以之前就起了想要使用 [GitLab](https://about.gitlab.com/) 來整合 WorkFlow 的念頭，一來方便省事，二來 GitLab 比較多人使用，整體的安全性、維護性還是高一點，所以就趁剛好年後比較有時間來替換，這篇就紀錄一下如何使用 Docker 快速的建置內部 GitLab + [GitLab Runner](https://docs.gitlab.com/runner/)，還有自己在建置中所遇到的問題
 
