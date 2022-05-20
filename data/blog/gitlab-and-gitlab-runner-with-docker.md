@@ -1,7 +1,7 @@
 ---
 title: 利用 Docker 建置 GitLab + GitLab Runner
 date: '2022-02-14'
-lastmod: '2022-02-14'
+lastmod: '2022-05-20'
 tags: ['docker', 'ci/cd', 'gitlab']
 draft: false
 summary: 繼上一篇文章中提到為團隊導入了 Jenkins 作為我們的 CI/CD 平台，這段時間整體架構都運作的非常順暢，也大大提升了團隊開發效率，但是為甚麼這次要替換掉既有架構呢？因爲目前所使用的版本控制平台為 Gitblit，雖然以版本控制的角度來看沒有甚麼太大的問題，但畢竟還是小眾平台且功能較為陽春，使用起來還是覺得少了點東西，所以之前就起了想要使用 GitLab 來整合 WorkFlow 的念頭，一來方便省事，二來 GitLab 比較多人使用，整體的安全性、維護性還是高一點，所以就趁剛好年後比較有時間來替換，這篇就紀錄一下如何使用 Docker 快速的建置內部 GitLab + GitLab Runner，還有自己在建置中所遇到的問題
@@ -100,7 +100,7 @@ DNS.2 = *.gitlab
 IP.1  = <YOUR SERVER IP>
 ```
 
-接著簽署憑證 `openssl req -x509 -new -nodes -sha256 -utf8 -days 3650 -newkey rsa:2048 -keyo ut gitlab.key -out gitlab.crt -config ssl.conf`，將產生出來的憑證跟私鑰替換到 `gitlab_data/config/ssl` 重啟容器就可以了
+接著簽署憑證 `openssl req -x509 -new -nodes -sha256 -utf8 -days 3650 -newkey rsa:2048 -keyout gitlab.key -out gitlab.crt -config ssl.conf`，將產生出來的憑證跟私鑰替換到 `gitlab_data/config/ssl` 重啟容器就可以了
 
 # 4. GitLab Runner
 
