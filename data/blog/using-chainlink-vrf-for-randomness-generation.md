@@ -122,7 +122,7 @@ contract VRFv2Consumer is VRFConsumerBaseV2 {
 
 # 5. 測試產生隨機數
 
-佈署完合約及加入消費者後即可呼叫 `fulfillRandomWords` 函數來產生隨機數，呼叫完後可以在 [Chainlink Subscription Manager](https://vrf.chain.link/?_ga=2.175932065.220816201.1654478207-782070902.1649906148) 看到正在運行的工作及狀態，如果運行上正常的話就會看到 `s_requestId` 及 `s_randomWords` 更新了
+佈署完合約及加入消費者後即可呼叫 `requestRandomWords` 函數來產生隨機數，呼叫完後可以在 [Chainlink Subscription Manager](https://vrf.chain.link/?_ga=2.175932065.220816201.1654478207-782070902.1649906148) 看到正在運行的工作及狀態，如果運行上正常的話就會看到 `s_requestId` 及 `s_randomWords` 更新了
 
 ![](/static/images/2022/06/06/using-chainlink-vrf-for-randomness-generation/004.png)
 
