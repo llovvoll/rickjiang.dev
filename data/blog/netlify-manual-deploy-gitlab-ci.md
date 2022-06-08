@@ -1,7 +1,7 @@
 ---
 title: 私有 GitLab 佈署 Netlify Previews
 date: '2022-05-24'
-lastmod: '2022-05-24'
+lastmod: '2022-06-08'
 tags: ['ci/cd', 'gitlab', 'nginx', 'golang']
 draft: false
 summary: 最近處理的專案，為了讓 Code Review 及整合測試更加流暢，讓有人提 Merge Request 的階段時可以佈署預覽網站，所以想到了可以利用 Netlify 來達成，但是佈署專案時如果要支援 Self-Hosted GitLab 是需要升級成 Pro 以上的方案，秉持著客家精神還好發現了可以使用 Netlify CLI 來達成
@@ -9,6 +9,8 @@ images: []
 authors: ['default']
 layout: PostLayout
 ---
+
+![](/static/images/2022/05/24/netlify-manual-deploy-gitlab-ci/001.png)
 
 最近處理的專案，為了讓 Code Review 及整合測試更加流暢，讓有人提 Merge Request 的階段時可以佈署預覽網站，所以想到了可以利用 [Netlify](https://www.netlify.com/) 來達成，但是佈署專案時如果要支援 Self-Hosted GitLab 是需要升級成 Pro 以上的方案，秉持著客家精神還好發現了可以使用 Netlify CLI 來達成，所以這邊只要寫好 GitLab CI/CD 配置檔就可以達成
 
