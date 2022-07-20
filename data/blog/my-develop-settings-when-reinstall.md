@@ -1,7 +1,7 @@
 ---
 title: My develop settings when reinstall
 date: '2022-07-19'
-lastmod: '2022-07-19'
+lastmod: '2022-07-20'
 tags: ['note', 'macos']
 draft: false
 summary: Record my development environment
@@ -27,6 +27,7 @@ brew install --cask iterm2
 brew install --cask visual-studio-code
 brew install --cask fig
 brew install --cask docker
+brew install --cask virtualbox
 
 brew install --cask forticlient
 brew install --cask microsoft-remote-desktop
