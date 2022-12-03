@@ -1,7 +1,7 @@
 ---
 title: Centos 7 安裝 Zimbra Open Source Email Platform
 date: '2022-11-28'
-lastmod: '2022-11-28'
+lastmod: '2022-12-03'
 tags: ['linux', 'centos', 'zimbra']
 draft: false
 summary: 記錄一下在 Centos 7 安裝 Zimbra Open Source Email Platform 的過程
@@ -41,6 +41,9 @@ $ vi /etc/hosts
 $ cd /etc/sysconfig/network-scripts
 $ ls
 $ vi ifcfg-eth0
+# DNS1=10.140.0.1
+# DNS2=8.8.8.8
+# DNS3=8.8.4.4
 $ cd ~
 $ systemctl restart network
 $ systemctl restart NetworkManager.service
@@ -55,7 +58,7 @@ $ reboot
 
 
 $ yum install bind bind-utils -y
-$ nano /etc/named.conf
+$ vi /etc/named.conf
 # listen-on port 53 { 127.0.0.1; 10.140.0.1; }; : Add your server’s IP to this line
 # allow-query     { localhost; 10.140.0.1; }; : Add your server’s IP to this line
 # forwarders { 8.8.8.8; }; : Add this line at the end of the options block
@@ -119,13 +122,22 @@ $ ./install.sh
 # done.
 # Checking for port conflicts
 
+# Login Banner: 400 x 60 pixel (File Format PNG)
+# Application Banner: 170 x 30 Pixel (File Format PNG)
+$ mkdir /opt/zimbra/jetty/webapps/zimbra/logos/
+$ chown zimbra:zimbra /opt/zimbra/jetty/webapps/zimbra/logos/MyLoginBanner.png
+$ chown zimbra:zimbra /opt/zimbra/jetty/webapps/zimbra/logos/MyAppBanner.png
+$ su zimbra
+$ zmprov md yourdomain.com zimbraSkinLogoURL https://mail.yourdomain.com
+$ zmprov md yourdomain.com zimbraSkinLogoLoginBanner /logos/MyLoginBanner.png
+$ zmprov md yourdomain.com zimbraSkinLogoAppBanner /logos/MyAppBanner.png
+$ zmcontrol restart
+$ zmcontrol status
+
 $ yum install firewalld
 $ systemctl start firewalld
 $ systemctl enable firewalld
 $ firewall-cmd --permanent --add-port={25,80,110,143,443,465,587,993,995,5222,5223,9071,7071}/tcp
 $ firewall-cmd --reload
 $ firewall-cmd --list-all
-
-$ su zimbra
-$ zmcontrol status
 ```
