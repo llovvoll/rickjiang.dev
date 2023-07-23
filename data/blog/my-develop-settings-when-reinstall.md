@@ -1,7 +1,7 @@
 ---
 title: My develop settings when reinstall
 date: '2022-07-19'
-lastmod: '2022-07-20'
+lastmod: '2023-07-23'
 tags: ['note', 'macos']
 draft: false
 summary: Record my development environment
@@ -21,16 +21,10 @@ layout: PostLayout
 # Install develop tools
 
 ```bash
-brew install --cask appcleaner
 brew install --cask google-chrome
 brew install --cask iterm2
 brew install --cask visual-studio-code
-brew install --cask fig
-brew install --cask docker
-brew install --cask virtualbox
 
-brew install --cask forticlient
-brew install --cask microsoft-remote-desktop
 brew install --cask anydesk
 brew install --cask zoom
 
@@ -39,7 +33,7 @@ brew install --cask font-hack-nerd-font
 brew install --cask font-fira-code
 
 brew install zsh
-brew install node@16
+brew install node@18
 ```
 
 # Setting Zsh as default & install oh-my-zsh
@@ -76,10 +70,6 @@ DEFAULT_USER="rick"
 # ed25519 is currently the safest and fastest key type for encryption and decryption
 ssh-keygen -t ed25519 -C "your_email@example.com"
 cat ~/.ssh/id_ed25519.pub
-
-# if ed25519 have compatibility issue can choose rsa
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
-cat ~/.ssh/id_rsa.pub
 
 git config --global user.name "your_username"
 git config --global user.email "your_email@example.com"
