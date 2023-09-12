@@ -1,0 +1,32 @@
+---
+title: 將 VMWare ESXi VM 移轉至 Proxmox VE 中
+date: '2023-09-12'
+lastmod: '2023-09-12'
+tags: ['vmware', 'proxmox']
+draft: false
+summary: 未來預計將 VMWare ESXi 全部轉為 Proxmox VE，因此需要將 VMWare VM 移轉至 Proxmox VE 中，這邊記錄一下移轉的過程。
+images: []
+authors: ['default']
+layout: PostLayout
+---
+
+未來預計將 VMWare ESXi 全部轉為 Proxmox VE，因此需要將 VMWare VM 移轉至 Proxmox VE 中，這邊記錄一下移轉的過程。
+
+1. 首先先使用 SSH 進入到 Proxmox VE 中
+2. 在 Proxmox VE 中也使用 SSH 進入到 VMWare ESXi 中
+3. 確認 VMDK 的路徑(正常路徑應該會在 /vmfs/volumes )，並且將 VMDK 複製到 Proxmox VE 中
+4. 複製 VMDK 的原文件，例如 yourVMname-flat.vmdk
+5. 複製完成後在 Proxmox VE 中使用 qemu-img 將 VMDK 轉換成 raw 格式
+
+```bash
+qemu-img convert <yourVMname>-flat.vmdk -O raw <yourVMname>.raw
+```
+
+6. 在 Proxmox VE 中新增一個 VM，並且先不需要新增硬碟
+7. 將剛剛轉換好的 raw 檔案導入到 Proxmox VE 中也使用
+
+```bash
+qm importdisk <VMID> <yourVMname>.raw <storage>
+```
+
+8. 在 Proxmox VE 中將剛剛導入的硬碟改為 SATA 介面並在 Boot Order 把硬碟啟用即可
