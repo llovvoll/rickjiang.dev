@@ -1,0 +1,22 @@
+---
+title: Debian 掛載 SMB(Samba) 網路共享資料夾
+date: '2024-05-15'
+lastmod: '2024-05-15'
+tags: ['linux', 'debian']
+draft: false
+summary: 紀錄一下如何在 Debian 掛載 SMB(Samba) 網路共享資料夾
+images: []
+authors: ['default']
+layout: PostLayout
+---
+
+紀錄一下如何在 Debian 掛載 SMB(Samba) 網路共享資料夾
+
+```bash
+$ apt update
+$ apt install cifs-utils
+
+$ mkdir -p /mnt/smbshare
+$ mount -t cifs -o username=user,domain=local,password=pass //192.168.1.1/smbshare /mnt/smbshare
+
+```
