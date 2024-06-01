@@ -1,0 +1,19 @@
+---
+title: 解決 Zimbra 使用 IMAP 收信時漏一封信
+date: '2024-06-02'
+lastmod: '2024-06-02'
+tags: ['zimbra']
+draft: false
+summary: 最近升級 Zimbra 版本後發現少數 USER 反應在手機 Outlook 收信總是會漏掉最後一封信，必須要有新的信進來才會看到上一封信的問題，經過測試後只要重建索引並刪掉 APP 重新設定帳戶就可以解決了
+images: []
+authors: ['default']
+layout: PostLayout
+---
+
+最近升級 Zimbra 版本後發現少數 USER 反應在手機 Outlook 收信總是會漏掉最後一封信，必須要有新的信進來才會看到上一封信的問題，經過測試後只要重建索引並刪掉 APP 重新設定帳戶就可以解決了
+
+```bash
+$ su zimbra
+$ zmprov rim rick@test.com start
+$ zmprov rim rick@test.com status
+```
